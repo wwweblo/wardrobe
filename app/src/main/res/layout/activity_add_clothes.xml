@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
@@ -48,7 +48,7 @@
         android:layout_marginTop="432dp"
         android:layout_marginEnd="12dp"
         android:text="name"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -57,11 +57,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="tags"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextTags"
         tools:layout_editor_absoluteY="556dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextTextDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
@@ -70,7 +70,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <TextView
         android:id="@+id/textView3"
@@ -79,11 +79,11 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="12dp"
         android:text="description"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextDescription"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editTextTextTags"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
@@ -91,7 +91,7 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextDescription" />
 
     <Button
         android:id="@+id/button"
@@ -101,6 +101,6 @@
         android:layout_marginTop="124dp"
         android:text="Save"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

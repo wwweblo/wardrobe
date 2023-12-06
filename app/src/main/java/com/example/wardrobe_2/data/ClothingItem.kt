@@ -8,7 +8,7 @@ data class ClothingItem(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val name: String,
-    val tags: List<String>,
     val description: String,
-    val imagePath: String // Путь к изображению (может быть URL или путь в локальном хранилище)
+    val tags: List<String>,
+    val imagePath: String
 )

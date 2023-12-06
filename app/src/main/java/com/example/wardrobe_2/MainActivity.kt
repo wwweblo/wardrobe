@@ -34,11 +34,13 @@ class MainActivity : AppCompatActivity() {
         // Загрузка данных из базы данных
         val dao = ClothingItemDatabase.getInstance(this).clothingItemDao()
 
-        // Наблюдение за LiveData
-        dao.getAllClothingItems().observe(this, { clothingItems ->
+        lifecycleScope.launch {
+            val clothingItems = dao.getAllClothingItemsSync()
+
             // Обновление RecyclerView адаптера
             adapter.submitList(clothingItems)
-        })
+        }
+
     }
 }
 
